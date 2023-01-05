@@ -1,0 +1,256 @@
+header {
+    display: grid;
+    grid-template-areas: 
+    "logo nav";
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: 100%;
+    margin: 0;
+    padding: 0;
+    max-height: 150px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("Media/page background_2.jpg");
+}
+#logo {
+    grid-area: logo;
+    height: 140px;
+    width: 140px;
+    opacity: 1.0;
+    text-align: right;
+    background-color: rgba(250, 243, 229, 70%);
+}
+#logo:hover {
+    background-color: rgba(250, 243, 229, 100%);
+}
+header nav#nav_area {
+    grid-area: nav;
+    text-align: right;
+    font-size: xx-large;
+    padding-top: 8%;
+    text-decoration: none;
+    padding-right: 5%;
+}
+header nav a {
+    text-decoration: none;
+    background-color: rgba(250, 243, 229, 50%);
+} 
+header nav a:hover {
+    color: black;
+}
+body {
+    background-image: url("Media/page background_2.jpg");
+}
+main {
+    display: grid;
+    grid-template-areas: 
+    "main_img main_img"
+    "text_1 image1"
+    "image2 image3"
+    "dis1 dis2";
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 25% 1fr 1fr 1fr;
+    margin: 0;
+}
+.main_img {
+    grid-area: main_img;
+    background-image: url("Media/main.jpg");
+    background-size: cover;
+    backface-visibility: 100%;
+    
+}
+#tag_line {
+    background-color: rgba(180, 180, 248,50%);
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px blue solid;
+    border-radius: 10px;
+    opacity: 110%;
+    align-content: center;
+    text-align: center;
+    width: fit-content;
+    padding: 20px;
+    margin-top: 25%;
+    margin-left: 34%;
+}
+.text_container {
+    grid-area: text_1;
+    height: fit-content;
+    width: 350px;
+    align-content: center;
+    font-size: 1.7em;
+    border: 3px rgb(0, 0, 255) solid;
+    text-align: center;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 10px rgb(18, 1, 66);
+    margin-top: 20%;
+    margin-left: 150px;
+    margin-bottom: 10%;
+    background-color: rgba(250, 243, 229, 75%);
+}
+.image_container {
+    grid-area: image1;
+    align-content: center;
+    margin-top: 15%;
+    margin-left: 90px;
+    margin-bottom: 8%;
+}
+.image2 {
+    grid-area: image2;
+    width: 100%;
+    height: 100%;
+}
+.image3 {
+    grid-area: image3;
+    width: 100%;
+    height: 100%;
+}
+#dis1 {
+    grid-area: dis1;
+    margin-top: 80px;
+    margin-left: 20%;
+}
+#dis1 > img:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+.dis_button1 {
+    background-image: linear-gradient(to right, rgb(255, 0, 179) , rgb(255, 255, 255));
+    border: solid 0px black;
+    height: 60px;
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 11%;
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 9px;
+}
+.dis_button1 > a {
+    padding-top: 10%;
+    text-decoration: none;
+    color: black;
+} 
+.dis_button1:hover {
+    background-image: linear-gradient(to right, rgb(255, 0, 179) , rgb(255, 0, 179));
+    font-size: 1.4em;
+}
+#dis2 {
+    grid-area: dis2;
+    margin-top: 80px;
+    margin-left: 20%;
+}
+#dis2 > img:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+.dis_button2 {
+    background-image: linear-gradient(to left, rgb(255, 0, 179) , rgb(255, 255, 255));
+    border: solid 0px black;
+    height: 60px;
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 11%;
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 9px;
+}
+.dis_button2 > a {
+    padding-top: 10%;
+    text-decoration: none;
+    color: black;
+} 
+.dis_button2:hover {
+    background-image: linear-gradient(to right, rgb(255, 0, 179) , rgb(255, 0, 179));
+    font-size: 1.4em;
+}
+#email_subscription {
+    background-color: rgb(255, 200, 129);
+    color: blue;
+    padding-top: 20px;
+    padding-left: 500px;
+    padding-bottom: 20px;
+    text-shadow: 20%;
+    height: fit-content;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#email_subscription > h2 {
+    font-size: 2.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.email_text {
+    font-size: 1.2em;
+    padding: 1%;
+}
+.subscribe_button {
+    font-size: 1.2em;
+    padding: 1%;
+    background-color: rgb(141, 141, 248);
+    border: solid 1px black;
+}
+.subscribe_button:hover {
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 1.2em;
+}
+#footer_links {
+    display: grid;
+    grid-template-areas: 
+    "page_links footer_logo external_links symbol contact_details"
+    "copyright copyright copyright copyright copyright";
+    grid-template-columns: 40% 1fr 20% 10% 20%;
+    grid-template-rows: 1fr 15%;
+    background-color: rgba(250, 243, 229, 75%);
+}
+.page_links {
+    grid-area: page_links;
+    text-align: center;
+    margin-top: 40px;
+    margin-right: 20px;
+    line-height: 150%;
+}
+.page_links>a {
+    text-decoration: none;
+}
+.page_links>a:hover {
+    color: black;
+    transform: scale(1.05);
+}
+.footer_logo {
+    grid-area: footer_logo;
+    margin-top: 10px;
+    margin-left: 35%;
+    height: 25vh;
+    width: 25vh;
+    text-align: center;
+}
+.external_links {
+    grid-area: external_links;
+    text-align: center;
+    margin-top: 20px;
+}
+.contact_details {
+    grid-area: contact_details;
+    margin-top: 25px;
+    margin-left: 10px;
+    float: left;
+    justify-items: center;
+}
+#symbol {
+    grid-area: symbol;
+    text-align: right;
+    margin-top: 20px;
+
+}
+#ft1 {
+    margin-top: 20px;
+}
+#copyright {
+    grid-area: copyright;   
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+}
