@@ -254,3 +254,77 @@ main {
     font-size: small;
     text-align: center;
 }
+form input:focus {
+    box-shadow: 0px 10px 30px -20px black;
+}
+main #thankyou {
+    display: block;
+    font-size: larger;   
+}
+#Thank_you_text {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: rgba(250, 243, 229, 80%); 
+    margin-left: 20px;
+    width: 190%;
+    height: 390px;   
+}
+.crepe_manu {
+    display: grid;
+    grid-template-areas: 
+    "card1 card2 card3"
+    "card4 card5 card6"
+    "card7 card8 card9";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+}
+.hot_crepe {
+    border: 2px black dotted;
+    padding: 10px;
+    margin: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+#card1 {
+    grid-area: card1;
+    border: 2px solid black;
+    border-radius: 10PX;
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(250, 243, 229, 80%);
+}
+#card1 img {
+    border-radius: 10px;
+    padding: 5px;
+    height: 80%;
+    width: 96%;
+}
+#card1 section {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
+#card1 h3 {
+    font-size: 1.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+#card1 h2 {
+    text-align: right;
+    margin-right: 15px;
+    font-size: 2em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#c
+ard1:hover {
+    transform: scale(1.08);
+}
