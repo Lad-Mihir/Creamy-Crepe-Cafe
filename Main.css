@@ -14,7 +14,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background-image: url("Media/page background_2.jpg");
+    /* background-image: url("Media/page background_2.jpg"); */
 }
 #logo {
     grid-area: logo;
@@ -61,7 +61,6 @@ main {
     background-image: url("Media/main.jpg");
     background-size: cover;
     backface-visibility: 100%;
-    
 }
 #tag_line {
     background-color: rgba(180, 180, 248,50%);
@@ -92,13 +91,15 @@ main {
     margin-left: 150px;
     margin-bottom: 10%;
     background-color: rgba(250, 243, 229, 75%);
+    box-shadow: 10px 10px rgb(255, 172, 7);
 }
 .image_container {
     grid-area: image1;
     align-content: center;
-    margin-top: 15%;
-    margin-left: 90px;
-    margin-bottom: 8%;
+    margin: auto;
+}
+.image_container img {
+    box-shadow: -40px -30px rgb(255, 172, 7);
 }
 .image2 {
     grid-area: image2;
@@ -112,8 +113,7 @@ main {
 }
 #dis1 {
     grid-area: dis1;
-    margin-top: 80px;
-    margin-left: 20%;
+    margin: auto;
 }
 #dis1 > img:hover {
     transform: scale(1.05);
@@ -130,7 +130,7 @@ main {
     text-align: center;
     padding-top: 9px;
 }
-.dis_button1 > a {
+#dis1 > a {
     padding-top: 10%;
     text-decoration: none;
     color: black;
@@ -141,8 +141,7 @@ main {
 }
 #dis2 {
     grid-area: dis2;
-    margin-top: 80px;
-    margin-left: 20%;
+    margin: auto;
 }
 #dis2 > img:hover {
     transform: scale(1.05);
@@ -159,7 +158,7 @@ main {
     text-align: center;
     padding-top: 9px;
 }
-.dis_button2 > a {
+#dis2 > a {
     padding-top: 10%;
     text-decoration: none;
     color: black;
@@ -294,13 +293,15 @@ main #thankyou {
     "card7 card8 card9";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    border: 2px black dotted;
-    padding: 10px;
-    margin: 10px;
+    border: 2px black solid;
+    margin-left: 15%;
+    margin-right: 15%;
     height: fit-content;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+}
+.hot_crepe legend {
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(250, 243, 229, 80%);
 }
 #card1 {
     grid-area: card1;
@@ -362,6 +363,139 @@ div#card2 {
 #card2:hover section {
     margin-top: 0;
 }
+div#card3 {
+    grid-area: card3;
+    border: 2px solid black;
+    border-radius: 10PX;
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    margin: 50px;
+    background-color: rgba(250, 243, 229, 80%);
+}
+#card3:hover {
+    transform: scale(1.08);
+}
+#card3:hover section {
+    margin-top: 0;
+}
+div#card4 {
+    grid-area: card4;
+    border: 2px solid black;
+    border-radius: 10PX;
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    margin: 50px;
+    background-color: rgba(250, 243, 229, 80%);
+}
+#card4:hover {
+    transform: scale(1.08);
+}
+#card4:hover section {
+    margin-top: 0;
+}
+div#card5 {
+    grid-area: card5;
+    border: 2px solid black;
+    border-radius: 10PX;
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    margin: 50px;
+    background-color: rgba(250, 243, 229, 80%);
+}
+#card5:hover {
+    transform: scale(1.08);
+}
+#card5:hover section {
+    margin-top: 0;
+}
+div#card6 {
+    grid-area: card6;
+    border: 2px solid black;
+    border-radius: 10PX;
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    margin: 50px;
+    background-color: rgba(250, 243, 229, 80%);
+}
+#card6:hover {
+    transform: scale(1.08);
+}
+#card6:hover section {
+    margin-top: 0;
+}
+div#card7 {
+    grid-area: card7;
+    border: 2px solid black;
+    border-radius: 10PX;
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    margin: 50px;
+    background-color: rgba(250, 243, 229, 80%);
+}
+#card7:hover {
+    transform: scale(1.08);
+}
+#card7:hover section {
+    margin-top: 0;
+}
+div#card8 {
+    grid-area: card8;
+    border: 2px solid black;
+    border-radius: 10PX;
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    margin: 50px;
+    background-color: rgba(250, 243, 229, 80%);
+}
+#card8:hover {
+    transform: scale(1.08);
+}
+#card8:hover section {
+    margin-top: 0;
+}
+div#card9 {
+    grid-area: card9;
+    border: 2px solid black;
+    border-radius: 10PX;
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    margin: 50px;
+    background-color: rgba(250, 243, 229, 80%);
+}
+#card9:hover {
+    transform: scale(1.08);
+}
+#card9:hover section {
+    margin-top: 0;
+}
 main.Contact_us {
     display: grid;
     grid-template-areas: 
@@ -395,18 +529,28 @@ main.Contact_us input {
 }
 #user_message {
     width: 90%;
-    height: 150px;
+    /* height: 150px; */
+    border-radius: 5px;
 }
 #contact_us_text {
     grid-area: contact_us_text;
-    margin-left: 40%;
+    margin-left: 10%;
     margin-top: auto;
     margin-bottom: auto;
     background-color: rgba(250, 243, 229, 80%);
+    font-size: 1.7em;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 90%;
 }
+#contact_us_text a {
+    text-decoration: none;
+} 
 #Contact_us_location {
     grid-area: Contact_us_location;
-    height: 250px;
-    width: 500px;
-    margin:auto;
+    height: 300px;
+    width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgb(255, 172, 7);
 }
