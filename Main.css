@@ -45,7 +45,7 @@ header nav a:hover {
 body {
     background-image: url("Media/page background_2.jpg");
 }
-main {
+main.home {
     display: grid;
     grid-template-areas: 
     "main_img main_img"
@@ -171,7 +171,8 @@ main {
     background-color: rgb(255, 200, 129);
     color: blue;
     padding-top: 20px;
-    padding-left: 500px;
+    padding-left: 40%;
+    padding-right: auto;
     padding-bottom: 20px;
     text-shadow: 20%;
     height: fit-content;
@@ -183,11 +184,11 @@ main {
     font-size: 2.5em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.email_text {
+#email_text {
     font-size: 1.2em;
     padding: 1%;
 }
-.subscribe_button {
+#subscribe_button {
     font-size: 1.2em;
     padding: 1%;
     background-color: rgb(141, 141, 248);
@@ -207,6 +208,7 @@ main {
     grid-template-columns: 40% 1fr 20% 10% 20%;
     grid-template-rows: 1fr 15%;
     background-color: rgba(250, 243, 229, 75%);
+    font-size: 1.1em;
 }
 .page_links {
     grid-area: page_links;
@@ -224,16 +226,19 @@ main {
 }
 .footer_logo {
     grid-area: footer_logo;
-    margin-top: 10px;
-    margin-left: 35%;
-    height: 25vh;
-    width: 25vh;
+    margin: auto;
+    height: 20vh;
+    width: 20vh;
     text-align: center;
 }
 .external_links {
     grid-area: external_links;
     text-align: center;
     margin-top: 20px;
+}
+.external_links img {
+    height: 7vh;
+    width: 7vh;
 }
 .contact_details {
     grid-area: contact_details;
@@ -246,7 +251,13 @@ main {
     grid-area: symbol;
     text-align: right;
     margin-top: 20px;
-
+}
+#symbol img {
+    height: 5vh;
+    width: 5vh;
+}
+.contact_details{
+    font-size: 1.1em;
 }
 #ft1 {
     margin-top: 20px;
@@ -274,17 +285,6 @@ main #thankyou {
     width: 190%;
     height: 390px;   
 }
-/*main.crepe_menu {
-    display: grid;
-    grid-template-areas: 
-    "card1 card2 card3"
-    "card4 card5 card6"
-    "card7 card8 card9";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin: 10px;
-    padding: 10px;
-}*/
 .hot_crepe {
     display: grid;
     grid-template-areas: 
@@ -294,9 +294,12 @@ main #thankyou {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     border: 2px black solid;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: 2.5%;
+    margin-bottom: 1%;
     height: fit-content;
+    box-shadow: 10px 10px rgb(255, 172, 7);
 }
 .hot_crepe legend {
     font-size: 2em;
@@ -514,7 +517,8 @@ main.Contact_us {
 }
 #form {
     grid-area: form;
-    margin-left: 20%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgba(250, 243, 229, 80%);
     border: 2px solid rgb(255, 172, 7);
     padding-left: 7%;
@@ -531,6 +535,7 @@ main.Contact_us input {
     width: 90%;
     /* height: 150px; */
     border-radius: 5px;
+    border: 2px solid black;
 }
 #contact_us_text {
     grid-area: contact_us_text;
