@@ -3,9 +3,20 @@ $(document).ready(() => {
     // $("#Card1").addEventListener("mouseover", evt=> {
     //     $("#card1_h3").next().text("Loren Ipsum...");
     // });
-
-
+   //adding validation to the email subscription button.
+    $("#email_sub").submit( evt => {
+      isvalid= true;
+      let email=$("#email_text").val();
+      if (email=="") {
+         alert("Please enter E-mail ID.");
+         isvalid= false;
+      }
+      if (isvalid== false) {
+         evt.preventDefault();
+      }
+      });
 });
+//hover action to all the cards.
 function onhover1() {
     $("#card1_h3").next().text("Lorem Ipsum...");
  }
@@ -60,3 +71,4 @@ function onhover9() {
 function onout9() {
    $("#card9_h3").next().text("");
 }
+
