@@ -19,14 +19,14 @@
             <main class="Contact_us">
                     <img src="Media/2.jpg" alt="Contact_us_img" id="Contact_us_img">
                     <form action="formtabkyou.html" method="post" id="form">
+                        <span id="error_messages"></span>
                         <h2>Do you any question or message for us!!</h2>
                         <h4>Let us know by filling following form. Thank you!!</h4><br>
-                        <label for="name"> Name: </label><br>
+                        <label for="name"> Name<spna id="error_messages">*</spna>: </label><br>
                         <input type="text" id="name" name="name" placeholder="Your name..."><br><br>
-                        <label for="user_email"> Email-ID: </label><br>
+                        <label for="user_email"> Email-ID<spna id="error_messages">*</spna>: </label><br>
                         <input type="email" id="user_email" name="user_email" placeholder="Your Email-Id..."><br><br>
-                        <label for="user_phone"> Phone Number:
-                             </label><br>
+                        <label for="user_phone"> Phone Number<spna id="error_messages">*</spna>:</label><br>
                         <input type="number" id="user_phone" name="user_phone" placeholder="Your phone number..."><br><br>
                         <label for="user_message"> Your message: </label><br>
                         <textarea id="user_message" name="user_message" placeholder="Your message..." rows="10"></textarea><br><br>

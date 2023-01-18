@@ -559,3 +559,7 @@ main.Contact_us input {
     border-radius: 10px;
     box-shadow: 10px 10px rgb(255, 172, 7);
 }
+#error_messages {
+    color: red;
+    font-size: 1.2em;
+}

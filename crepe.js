@@ -15,6 +15,33 @@ $(document).ready(() => {
          evt.preventDefault();
       }
       });
+
+   //Validation for the contact form.
+   
+   $("#form").submit( contact_evt => {
+      isValid=true;
+      var error_messages= [];
+      let name_contact=$("#name").val();
+      let user_email= $("#user_email").val();
+      let user_phone=$("#user_phone").val();
+
+      if (name_contact=="") {
+         error_messages.push("Please enter your name.");
+         isValid= false;
+      }
+      if (user_email=="") {
+         error_messages.push("Please enter your E-mail ID.");
+         isValid= false;
+      }
+      if (user_phone=="") {
+         error_messages.push("Please enter your phone number.");
+         isValid= false;
+      }
+      if (isValid== false) {
+         contact_evt.preventDefault();
+         $("#error_messages").html(error_messages.join("<br>"));
+      }
+   });
 });
 //hover action to all the cards.
 function onhover1() {
