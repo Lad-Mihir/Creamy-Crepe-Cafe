@@ -26,20 +26,20 @@ $(document).ready(() => {
       let user_phone=$("#user_phone").val();
 
       if (name_contact=="") {
-         error_messages.push("Please enter your name.");
+         error_messages.push("Please enter your name.<br\>");
          isValid= false;
       }
       if (user_email=="") {
-         error_messages.push("Please enter your E-mail ID.");
+         error_messages.push("Please enter your E-mail ID.<br\>");
          isValid= false;
       }
       if (user_phone=="") {
-         error_messages.push("Please enter your phone number.");
+         error_messages.push("Please enter your phone number.<br\>");
          isValid= false;
       }
       if (isValid== false) {
          contact_evt.preventDefault();
-         $("#error_messages").html(error_messages.join("<br>"));
+         $("#error_messages").html(error_messages);
       }
    });
 });
